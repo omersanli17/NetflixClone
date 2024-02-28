@@ -13,7 +13,4 @@ class MainTabBarViewController: UITabBarController {
         super.viewDidLoad()
         view.backgroundColor = .systemYellow
     }
-
-
 }
-
