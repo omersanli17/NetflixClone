@@ -8,6 +8,9 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+
+    let sectionTitle: [String] = ["Trending Movies", "Popular", "Trending Tv", "Top Rated", "Upcoming Movies"]
+
     private let homeFeedTable: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
         table.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: "CollectionViewTableViewCell")
@@ -48,7 +51,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 20
+        return sectionTitle.count
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
