@@ -9,6 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    private let service: MoviesServiceable
     let sectionTitle: [String] = ["Trending Movies", "Popular", "Trending Tv", "Top Rated", "Upcoming Movies"]
 
     private let homeFeedTable: UITableView = {
@@ -16,6 +17,15 @@ class HomeViewController: UIViewController {
         table.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: "CollectionViewTableViewCell")
         return table
     }()
+
+    init(service: MoviesServiceable) {
+        self.service = service
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         view.backgroundColor = .systemBackground
@@ -40,6 +50,10 @@ class HomeViewController: UIViewController {
             UIBarButtonItem(image: .init(systemName: "play.rectangle"), style: .done, target: self, action: nil)
         ]
         navigationController?.navigationBar.tintColor = .white
+    }
+
+    private func fetchData() {
+
     }
 
     override func viewDidLayoutSubviews() {
