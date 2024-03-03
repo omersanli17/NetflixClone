@@ -12,7 +12,7 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let vc1 = UINavigationController(rootViewController: HomeViewController(service: MoviesService()))
-        let vc2 = UINavigationController(rootViewController: UpcomingViewController())
+        let vc2 = UINavigationController(rootViewController: UpcomingViewController(service: MoviesService()))
         let vc3 = UINavigationController(rootViewController: SearchViewController())
         let vc4 = UINavigationController(rootViewController: DownloadsViewController())
 
@@ -22,7 +22,7 @@ class MainTabBarViewController: UITabBarController {
         vc4.tabBarItem.image = UIImage(systemName: "arrow.down.to.line")
 
         vc1.title = "Home"
-        vc2.title = "Coming Soon"
+        vc2.title = "Upcoming"
         vc3.title = "Search"
         vc4.title = "Downloads"
 
