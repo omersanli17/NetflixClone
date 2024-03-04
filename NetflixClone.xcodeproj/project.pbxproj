@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250232022B95293A00D6EBA4 /* YoutubeEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250232012B95293A00D6EBA4 /* YoutubeEndpoint.swift */; };
+		250232052B952E8200D6EBA4 /* YoutubeServicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250232042B952E8200D6EBA4 /* YoutubeServicable.swift */; };
 		25336E982B8E5C0800C3D360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25336E972B8E5C0800C3D360 /* AppDelegate.swift */; };
 		25336E9A2B8E5C0800C3D360 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25336E992B8E5C0800C3D360 /* SceneDelegate.swift */; };
 		25336E9C2B8E5C0800C3D360 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25336E9B2B8E5C0800C3D360 /* MainTabBarViewController.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		250232012B95293A00D6EBA4 /* YoutubeEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeEndpoint.swift; sourceTree = "<group>"; };
+		250232042B952E8200D6EBA4 /* YoutubeServicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeServicable.swift; sourceTree = "<group>"; };
 		25336E942B8E5C0800C3D360 /* NetflixClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25336E972B8E5C0800C3D360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25336E992B8E5C0800C3D360 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		250232002B95292C00D6EBA4 /* YoutubeBase */ = {
+			isa = PBXGroup;
+			children = (
+				250232032B952E7700D6EBA4 /* YoutubeService */,
+				250232012B95293A00D6EBA4 /* YoutubeEndpoint.swift */,
+			);
+			path = YoutubeBase;
+			sourceTree = "<group>";
+		};
+		250232032B952E7700D6EBA4 /* YoutubeService */ = {
+			isa = PBXGroup;
+			children = (
+				250232042B952E8200D6EBA4 /* YoutubeServicable.swift */,
+			);
+			path = YoutubeService;
+			sourceTree = "<group>";
+		};
 		25336E8B2B8E5C0800C3D360 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +184,7 @@
 		2598C7AC2B92135200E5A605 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				250232002B95292C00D6EBA4 /* YoutubeBase */,
 				2598C7BA2B9214D400E5A605 /* Service */,
 				2598C7B62B92146700E5A605 /* Endpoints */,
 				2598C7AD2B92135A00E5A605 /* Base */,
@@ -353,6 +375,7 @@
 				2598C7BE2B92150100E5A605 /* TopRatedModel.swift in Sources */,
 				25E682092B9332B500346310 /* SectionType.swift in Sources */,
 				2580656B2B94A89700961FA9 /* VideoElement.swift in Sources */,
+				250232022B95293A00D6EBA4 /* YoutubeEndpoint.swift in Sources */,
 				2598C7B32B92138400E5A605 /* HTTPMethod.swift in Sources */,
 				2598C7B82B92147E00E5A605 /* MoviesEndpoint.swift in Sources */,
 				2598C7B12B92137700E5A605 /* HTTPClient.swift in Sources */,
@@ -362,6 +385,7 @@
 				2598C7C02B92151400E5A605 /* MovieModel.swift in Sources */,
 				25AEA2BB2B90A52300B63B92 /* HeroHeaderUIView.swift in Sources */,
 				253688252B8F19D500A15A4F /* DownloadsViewController.swift in Sources */,
+				250232052B952E8200D6EBA4 /* YoutubeServicable.swift in Sources */,
 				25336E982B8E5C0800C3D360 /* AppDelegate.swift in Sources */,
 				25336E9A2B8E5C0800C3D360 /* SceneDelegate.swift in Sources */,
 				258065652B94A7DA00961FA9 /* TitleTableViewCell.swift in Sources */,

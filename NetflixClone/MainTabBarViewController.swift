@@ -12,7 +12,7 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let vc1 = UINavigationController(rootViewController: HomeViewController(service: MoviesService()))
-        let vc2 = UINavigationController(rootViewController: UpcomingViewController(service: MoviesService()))
+        let vc2 = UINavigationController(rootViewController: UpcomingViewController(service: MoviesService(), youtubeService: YoutubeService()))
         let vc3 = UINavigationController(rootViewController: SearchViewController())
         let vc4 = UINavigationController(rootViewController: DownloadsViewController())
 

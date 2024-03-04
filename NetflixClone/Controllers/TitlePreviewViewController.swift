@@ -94,11 +94,11 @@ class TitlePreviewViewController: UIViewController {
 
     }
 
-    public func configure(with model: TitlePreviewViewModel) {
-        titleLabel.text = model.title
-        overviewLabel.text = model.titleOverview
+    public func configure(with model: Video) {
+        titleLabel.text = model.snippet.title
+        overviewLabel.text = model.snippet.description
 
-        guard let url = URL(string: "https://www.youtube.com/embed/\(model.youtubeView.id.videoId)") else {
+        guard let url = URL(string: "https://www.youtube.com/embed/\(model.id.videoId)") else {
             return
         }
 
